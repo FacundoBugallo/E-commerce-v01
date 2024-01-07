@@ -1,7 +1,8 @@
 :root {
   --blue: #2B6EAE;
   --blue-dark: #1D4B8B;
-  --blue-light: #BDC8D4;
+  --blue-light: #5495d6;
+  --light: #ccdffb;
 
   --black:#18181B;
 }
@@ -32,4 +33,70 @@ img {
 
 li img {
   max-height: 25px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  background-color: var(--blue-dark);
+
+}
+
+aside {
+  padding: 2rem;
+  color: var(--light);
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo{
+  font-weight:400;
+  font-size: 1.4rem;
+}
+
+.text-footer {
+  color: gray;
+  font-size: .85rem;
+}
+
+main {
+  background-color: var(--light);
+  margin: 1rem;
+  margin-left: 0;
+  border-radius: 1rem;
+  padding: 3rem;
+}
+
+.title {
+  color: var(--blue-dark);
+  margin-bottom: 2rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.producto {
+  border-radius: 1rem;
+}
+
+.producto img {
+  background-color: var(--blue-light);
+  border-radius: 1rem;
+  max-width: 100% ;
+}
+
+.producto .about-product {
+  background-color: var(--blue-dark);
+  color: var(--light);
+  padding: .5rem;
+  border-radius: 1rem;
+  margin-top: -2rem;
+  position: relative;
 }
