@@ -1,8 +1,9 @@
 :root {
   --blue: #2B6EAE;
-  --blue-dark: #1D4B8B;
+  --blue-dark: #195dbd;
   --blue-light: #5495d6;
-  --light: #ccdffb;
+  --light: #cde1ff;
+  --white: #fff;
 
   --black:#18181B;
 }
@@ -11,7 +12,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, input, textarea {
@@ -39,7 +40,6 @@ li img {
   display: grid;
   grid-template-columns: 1fr 4fr;
   background-color: var(--blue-dark);
-
 }
 
 aside {
@@ -87,16 +87,41 @@ main {
 }
 
 .producto img {
-  background-color: var(--blue-light);
-  border-radius: 1rem;
+  background-color: var(--light);
   max-width: 100% ;
 }
 
 .producto .about-product {
   background-color: var(--blue-dark);
-  color: var(--light);
+  color: var(--white);
   padding: .5rem;
   border-radius: 1rem;
   margin-top: -2rem;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+.about-product p {
+  font-size: .8rem;
+}
+
+.title-product {
+  font-size: 1rem;
+}
+
+.agregar-carrito {
+  border: 0;
+  color: var(--blue);
+  background-color: var(--blue-light);
+  padding: .25rem;
+  text-transform: uppercase;
+  border-radius: 2rem;
+  cursor: pointer;
+  border: 2px solid var(--blue-light);
+}
+
+.agregar-carrito:hover {
+  background-color: var(--white);
 }
